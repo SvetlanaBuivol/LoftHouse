@@ -1,0 +1,31 @@
+.footer {
+    padding: 72px 0 51px;
+    background-color: $footer-bg;
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+}
+
+.footer-logo {
+    margin-top: -12px;
+}
+
+.footer__nav-list {
+    display: grid;
+    gap: 15px;
+}
+
+.footer__contacts-social {
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+
+    // img {
+    //     height: 20px;
+    // }
+}
