@@ -12,12 +12,20 @@
 
 .apartments__title {
   margin-bottom: 88px;
+
+  @include mediaTablet {
+    margin-bottom: 44px;
+  }
 }
 
 .apartments__gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .apartments__gallery-link {
@@ -77,4 +85,10 @@
   left: 50px;
   bottom: 44px;
   font-size: 24px;
+
+  @include mediaTablet {
+    font-size: 16px;
+    left: 35px;
+    bottom: 38px;
+  }
 }

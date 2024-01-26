@@ -151,6 +151,11 @@ a:hover {
   font-weight: 700;
   color: #d4c17f;
 }
+@media screen and (max-width: 959px) {
+  .title-secondary {
+    font-size: 26px;
+  }
+}
 
 .link-bold {
   color: #d4c17f;
@@ -166,7 +171,7 @@ a:hover {
   padding: 30px 0 74px;
   background: linear-gradient(180deg, #242b33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242b33 92.19%), url("../assets/img/header/header-bg.jpg"), lightgray 50%/cover no-repeat;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header {
     min-height: unset;
     padding: 22px 0 64px;
@@ -210,7 +215,7 @@ a:hover {
   right: 30px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav {
     display: none;
   }
@@ -219,7 +224,7 @@ a:hover {
 .header__nav-button {
   display: none;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__nav-button {
     display: block;
   }
@@ -244,7 +249,7 @@ a:hover {
 .header__title h1 {
   margin-bottom: 81px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__title {
     padding-top: 110px;
     padding-bottom: 110px;
@@ -262,7 +267,7 @@ a:hover {
   justify-content: center;
   font-size: 18px;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 959px) {
   .header__bottom {
     grid-template-columns: 260px;
     gap: 18px;
@@ -352,6 +357,7 @@ a:hover {
 .benefits {
   position: relative;
   padding: 120px 0;
+  overflow: hidden;
 }
 .benefits::after {
   content: "II";
@@ -364,10 +370,22 @@ a:hover {
   font-family: "Playfair Display", serif;
   font-size: 400px;
 }
+@media screen and (max-width: 959px) {
+  .benefits {
+    padding: 60px 0;
+  }
+}
 
 .benefits__list {
   display: flex;
   gap: 70px;
+}
+@media screen and (max-width: 959px) {
+  .benefits__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 45px;
+  }
 }
 
 .benefits__item {
@@ -377,12 +395,24 @@ a:hover {
 .benefits__item-image {
   margin-bottom: 53px;
 }
+@media screen and (max-width: 959px) {
+  .benefits__item-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+  }
+}
 
 .benefits__item-text {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.35;
+}
+@media screen and (max-width: 959px) {
+  .benefits__item-text {
+    font-size: 16px;
+  }
 }
 
 .apartments {
@@ -403,11 +433,21 @@ a:hover {
 .apartments__title {
   margin-bottom: 88px;
 }
+@media screen and (max-width: 959px) {
+  .apartments__title {
+    margin-bottom: 44px;
+  }
+}
 
 .apartments__gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media screen and (max-width: 959px) {
+  .apartments__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .apartments__gallery-link {
@@ -462,10 +502,22 @@ a:hover {
   bottom: 44px;
   font-size: 24px;
 }
+@media screen and (max-width: 959px) {
+  .apartments__gallery-title {
+    font-size: 16px;
+    left: 35px;
+    bottom: 38px;
+  }
+}
 
 .cta {
   padding: 180px 0;
   background: linear-gradient(180deg, #242b33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242b33 90.1%), linear-gradient(0deg, rgba(36, 43, 51, 0.9) 0%, rgba(36, 43, 51, 0.9) 100%), url("/src/assets/img/cta/cta-bg.jpg"), #c4c4c4;
+}
+@media screen and (max-width: 959px) {
+  .cta {
+    padding: 60px 0;
+  }
 }
 
 .cta__title {
@@ -477,15 +529,31 @@ a:hover {
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .cta__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 
 .cta__text {
   line-height: 1.5;
+}
+@media screen and (max-width: 959px) {
+  .cta__text {
+    font-size: 14px;
+  }
 }
 
 .cta__form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 35px 30px;
+}
+@media screen and (max-width: 959px) {
+  .cta__form {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 500px));
+    justify-content: center;
+  }
 }
 
 .form__input {
@@ -528,6 +596,7 @@ a:hover {
 
 .video {
   position: relative;
+  overflow: hidden;
   text-align: center;
 }
 .video::after {
@@ -567,6 +636,12 @@ a:hover {
   transform: translate(-50%, -50%);
   transition: all 250ms ease-in;
 }
+@media screen and (max-width: 959px) {
+  .video__icon {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 .video__link:hover .video__icon {
   transform: translate(-50%, -50%) scale(1.2);
@@ -590,9 +665,19 @@ a:hover {
   font-size: 400px;
   top: 160px;
 }
+@media screen and (max-width: 959px) {
+  .section-map {
+    padding: 90px 0;
+  }
+}
 
 .section-map__title {
   margin-bottom: 88px;
+}
+@media screen and (max-width: 959px) {
+  .section-map__title {
+    margin-bottom: 44px;
+  }
 }
 
 .map {
@@ -603,9 +688,19 @@ a:hover {
 .feedback {
   padding-bottom: 180px;
 }
+@media screen and (max-width: 959px) {
+  .feedback {
+    padding-bottom: 90px;
+  }
+}
 
 .feedback__title {
   margin-bottom: 38px;
+}
+@media screen and (max-width: 959px) {
+  .feedback__title {
+    margin-bottom: 28px;
+  }
 }
 
 .feedback__form {
@@ -613,10 +708,21 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+@media screen and (max-width: 959px) {
+  .feedback__form {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 500px));
+    justify-content: center;
+  }
+}
 
 .footer {
   padding: 72px 0 51px;
   background-color: #2d343c;
+}
+@media screen and (max-width: 959px) {
+  .footer {
+    padding: 35px 0 25px;
+  }
 }
 
 .footer__wrapper {
@@ -625,6 +731,12 @@ a:hover {
   gap: 30px;
   font-size: 14px;
   letter-spacing: 0.05em;
+}
+@media screen and (max-width: 959px) {
+  .footer__wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
+  }
 }
 
 .footer-logo {

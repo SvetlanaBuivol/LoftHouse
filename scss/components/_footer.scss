@@ -1,31 +1,36 @@
 .footer {
-    padding: 72px 0 51px;
-    background-color: $footer-bg;
+  padding: 72px 0 51px;
+  background-color: $footer-bg;
+
+  @include mediaTablet {
+    padding: 35px 0 25px;
+  }
 }
 
 .footer__wrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    font-size: 14px;
-    letter-spacing: 0.05em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
+  }
 }
 
 .footer-logo {
-    margin-top: -12px;
+  margin-top: -12px;
 }
 
 .footer__nav-list {
-    display: grid;
-    gap: 15px;
+  display: grid;
+  gap: 15px;
 }
 
 .footer__contacts-social {
-    display: flex;
-    column-gap: 22px;
-    align-items: center;
-
-    // img {
-    //     height: 20px;
-    // }
+  display: flex;
+  column-gap: 22px;
+  align-items: center;
 }
